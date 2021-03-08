@@ -2,21 +2,21 @@
 	"paper": [
 		{
 			"image": "https://assets.zyrosite.com/_SITE-ASSETS/YyGzVzgpx6FOZ3QW/parceiro-patricia.jpg",
-			"title": "tbd",
+			"title": "Children as Robot Designers",
 			"author": [
 				{
-					"author_name": "tbd"
+					"author_name": "Alves-Oliveira, Patricia"
 				}
 			],
 			"conference url": "https://www.humanrobotinteraction.com/2021/",
 			"conference": "hri",
 			"year": "2021",
-			"abstract": "",
+			"abstract": "bla bla",
 			"links": {
-				"pdf_url": ""
+				"pdf_url": "https://discovery.ucl.ac.uk/id/eprint/1531990/1/Vasalou_The%20case%20of%20classroom%20robots.pdf"
 			},
-			"id": "nickname",
-			"short_abstract": "tbd",
+			"id": "hri2021",
+			"short_abstract": "tbcevvenveionved",
 			"conference_full_name": "International Conference on HRI",
 			"bibtex": "@inproceedings{test,\n  title={test},\n  author={alves, patricia},\n  booktitle={Proc. of HRI},\n  year={2021}\n}"
 		}
