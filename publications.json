@@ -2,23 +2,23 @@
 	"paper": [
 		{
 			"image": "https://github.com/patricialvesoliveira/patricialvesoliveira.github.io/blob/master/img/conflict.png",
-			"title": "Children as Robot Designers",
+			"title": "Looking for Conflict: Gaze Dynamics in a Dyadic Mixed-Motive Game",
 			"author": [
 				{
-					"author_name": "Alves-Oliveira, Patricia hello"
+					"author_name": "Joana Campos, Patrícia Alves-Oliveira, and Ana Paivao"
 				}
 			],
-			"conference url": "https://www.humanrobotinteraction.com/2021/",
-			"conference": "hri",
-			"year": "2021",
-			"abstract": "bla bla",
+			"conference url": "https://www.springer.com/journal/10458",
+			"conference": "Autonomous Agents and Multi-Agent Systems",
+			"year": "2015",
+			"abstract": "The way gaze cues are used in social interactions is by no means irrelevant because they are fundamentally important for understanding social interactions. In this paper, we argue that social conflict is a form of relating and that gaze clues are critical to understanding the underlying cognitive processes in this phenomenon. To learn more about conflict, we created an experimental setting that reduces real life to a mixed-motive game. We analyse the gaze patterns of 22 10- to 12-year-old children in specific game moments that could have been conductive to conflict. Our aim is to understand how subtle forms of conflict unfold, by analysing micro-level behaviours and establishing a link to high-level psychological constructs. Their gazes show that children are being more competitive or cooperative at different stages of the game. Children tend to avoid confrontation by averting face-directed gazes when they are asking for larger profits, and they gaze longer to attempt to persuade the other child.",
 			"links": {
 				"pdf_url": "https://discovery.ucl.ac.uk/id/eprint/1531990/1/Vasalou_The%20case%20of%20classroom%20robots.pdf"
 			},
-			"id": "hri2021",
-			"short_abstract": "tbcevvenveionved",
-			"conference_full_name": "International Conference on HRI",
-			"bibtex": "@inproceedings{test,\n  title={test},\n  author={alves, patricia},\n  booktitle={Proc. of HRI},\n  year={2021}\n}"
+			"id": "autonomousagents15",
+			"short_abstract": "To learn more about conflict, we created an experimental setting that reduces real life to a mixed-motive game and analyzed the gaze patterns in specific game moments that could have been conductive to conflict.",
+			"conference_full_name": "Autonomous Agents and Multi-Agent Systems",
+			"bibtex": "@article{campos2016looking, \n title={Looking for conflict: gaze dynamics in a dyadic mixed-motive game},\n author={Campos, Joana and Alves-Oliveira, Patr{\'\i}cia and Paiva, Ana},\n  journal={Autonomous Agents and Multi-Agent Systems},\n  volume={30},\n  number={1},\n  pages={112--135},\n  year={2016},\n  publisher={Springer}}"
 		}
 	]
 }
