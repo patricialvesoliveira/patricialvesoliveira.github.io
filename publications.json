@@ -2,22 +2,22 @@
 	"paper": [
 		{
 			"image": "https://assets.zyrosite.com/_SITE-ASSETS/YyGzVzgpx6FOZ3QW/parceiro-patricia.jpg",
-			"title": "gehuowhgouehwgoegoeugqwg",
+			"title": "hello world",
 			"author": [
 				{
-					"author_name": "hahahahaha"
+					"author_name": "patricia"
 				}
 			],
 			"conference url": "https://www.humanrobotinteraction.com/2021/",
-			"conference": "huhuhuhuhuh",
-			"year": "2032",
+			"conference": "hri",
+			"year": "2021",
 			"abstract": "",
 			"links": {
 				"pdf_url": ""
 			},
 			"id": "nickname",
 			"short_abstract": "tbd",
-			"conference_full_name": "International Conference on hahahah",
+			"conference_full_name": "International Conference on HRI",
 			"bibtex": "@inproceedings{test,\n  title={test},\n  author={alves, patricia},\n  booktitle={Proc. of HRI},\n  year={2021}\n}"
 		}
 	]
