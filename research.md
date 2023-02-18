@@ -14,7 +14,7 @@ image: /assets/images/helena.png
 </div>
 
 <div class="footer-col body-col-3">
-	<div><span class="focus">Postdoc</span> in <a href="https://www.cs.washington.edu/" target="_blank">Computer Science </a> at the <a href="https://www.washington.edu/" target="_blank">University of Washington</a></div>
+	<div><span class="focus">Senior UX Designer</span> at <a href="https://www.amazon.com" target="_blank">Amazon</a></div>
 	<div><span class="focus">Area</span>: Human-Robot Interaction</div>
 	<div><span class="focus">Focuses</span>: Human-Computer Interaction · Design Research · Health Sciences</div>
 	<div><span class="focus">Lab</span>: <a href="https://hcrlab.cs.washington.edu/" target="_blank">Human-Centered Robotics Lab</a></div>
