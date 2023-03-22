@@ -16,7 +16,7 @@ image: /assets/images/helena.png
 <div class="footer-col body-col-3">
 	<div><span class="focus">Senior UX Designer</span> at <a href="https://www.amazon.com" target="_blank">Amazon</a></div>
 	<div><span class="focus">Area</span>: Human-Robot Interaction</div>
-	<div><span class="focus">Focuses</span>: Human-Computer Interaction · Design Research · Health Sciences</div>
+	<div><span class="focus">Focuses</span>: Human-Computer Interaction · Design Research · Health</div>
 
 <div class="padding_top smaller">
 	<div>
