@@ -253,7 +253,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  github-pages
+  github-pages (~> 228)
   jekyll-feed
   jekyll-mentions
   minima (~> 2.0)
