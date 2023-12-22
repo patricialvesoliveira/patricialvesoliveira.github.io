@@ -14,7 +14,7 @@ image: /assets/images/helena.png
 </div>
 
 <div class="footer-col body-col-3">
-	<div><span class="focus">Senior UX Designer</span> at <a href="https://www.amazon.com" target="_blank">Amazon</a></div>
+	<div><span class="focus">Assistant Professor</span> of Robotics<a href="https://robotics.umich.edu/" target="_blank"> at the<a href="https://umich.edu/" target="_blank">University of Michigan</a></div>
 	<div><span class="focus">Area</span>: Human-Robot Interaction</div>
 	<div><span class="focus">Focuses</span>: Human-Computer Interaction · Design Research · Health</div>
 
