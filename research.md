@@ -14,13 +14,13 @@ image: /assets/images/helena.png
 </div>
 
 <div class="footer-col body-col-3">
-	<div><span class="focus">Assistant Professor</span> of Robotics<a href="https://robotics.umich.edu/" target="_blank"> at the<a href="https://umich.edu/" target="_blank">University of Michigan</a></div>
+	<div><span class="focus">Assistant Professor</span> of <a href="https://robotics.umich.edu/" target="_blank">Robotics</a> at the <a href="https://umich.edu/" target="_blank">University of Michigan</a></div>
 	<div><span class="focus">Area</span>: Human-Robot Interaction</div>
 	<div><span class="focus">Focuses</span>: Human-Computer Interaction · Design Research · Health</div>
 
 <div class="padding_top smaller">
 	<div>
-	<a href="mailto:{{ site.email }}" target="_blank"><span class="icon icon--email">{% include icon-email.svg %}</span>patri at cs dot washington dot edu</a>
+	<a href="mailto:{{ site.email }}" target="_blank"><span class="icon icon--email">{% include icon-email.svg %}</span>robopati at umich dot edu</a>
 	</div>
 	<div>
 	<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">twitter</span></a>
