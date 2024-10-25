@@ -22,5 +22,5 @@ order: 3
 <a href="/assets/papers/CV_Patricia.pdf" target="_blank" class="button hundred">Click for PDF</a>
 </div> -->
 
-<object class="pdf" data="/assets/papers/CV_Patricia.pdf"></object>
+<object class="pdf" data="{{ site.baseurl }}/assets/papers/CV_Patricia.pdf"></object>
 </div>
