@@ -10,7 +10,7 @@ image: /assets/images/helena.png
 <div class="footer-col-wrapper clearfix">
 
 <div class="footer-col body-col-2">
-	<img src="/assets/images/patriciaphoto2.jpg" id="self_img" class="left padded" style="width: 190px">
+	<img src="/assets/images/patriciaphoto.jpg" id="self_img" class="left padded" style="width: 190px">
 </div>
 
 <div class="footer-col body-col-3">
