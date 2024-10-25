@@ -16,7 +16,7 @@
 title: Patrícia Alves-Oliveira
 email: patri at cs dot washington dot edu
 descriptionshort: >- # this means to ignore newlines until "baseurl:"
-  Patrícia Alves-Oliveira is a Senior UX Designer at Amazon.
+  Patrícia Alves-Oliveira is an Assistant Professor of Robotics at the University of Michigan.
   Her research focuses on human-robot interaction, health sciences, and design research.
 descriptionlong: >- # this means to ignore newlines until "baseurl:"
   Original website design by Sarah Chasins.
@@ -26,24 +26,9 @@ twitter_username: p_alvesoliveira
 github_username:  patricialvesoliveira
 youtube_url: https://www.youtube.com/channel/UCwjtF3elK-TdKBRev-JQZrA
 linkedin_username: patricia-alves-oliveira
-title_image: /assets/images/patriciaphoto.jpg
-
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+title_image: /assets/images/patriciaphoto.jpg #header photo file location, include / at the start
+google_scholar_link: "https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate"
 
 permalink: /blog/:title:output_ext
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
