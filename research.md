@@ -22,14 +22,21 @@ image: /assets/images/helena.jpg
 	<div>
 	<a href="mailto:{{ site.email }}" target="_blank"><span class="icon icon--email">{% include icon-email.svg %}</span>robopati at umich dot edu</a>
 	</div>
+		<div>
+	<a href="https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate" target="_blank"><span class="icon icon--twitter">{% include icon-google-scholar.svg %}</span><span class="username"> Google Scholar</span></a>
+	</div>
+		<div>
+	<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank"><span class="icon icon--twitter">{% include icon-linkedin.svg %}</span><span class="username"> LinkedIn</span></a>
+	</div>
+
+	<div><a  href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">Twitter</span></a></div>
+
 	<div>
-	<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">twitter</span></a>
+	<a href="https://github.com/{{ site.github_username }}" target="_blank"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">GitHub</span></a>
 	</div>
 	<div>
-	<a href="https://github.com/{{ site.github_username }}" target="_blank"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">github</span></a>
-	</div>
-	<div>
-	<a href="{{ site.youtube_url }}" target="_blank"><span class="icon icon--youtube">{% include icon-youtube.svg %}</span><span class="username">youtube</span></a>
+	<a href="{{ site.youtube_url }}" target="_blank"><span class="icon icon--youtube">{% include icon-youtube.svg %}</span><span class="username">YouTube</span></a>
+	
 	</div>
 	</div>
 
