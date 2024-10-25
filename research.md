@@ -3,7 +3,7 @@ layout: page
 title: Home
 permalink: /
 order: 0
-image: /assets/images/helena.png
+image: /assets/images/helena.jpg
 ---
 
 
@@ -113,7 +113,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/emar2.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/emar2.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">EMAR</span>
@@ -137,7 +137,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/transitions.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/transitions.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">Transitions</span>
@@ -148,7 +148,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/social-dining.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/social-dining.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">Social Dining </span>
@@ -165,7 +165,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/parceiro.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/parceiro.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">PARCEIRO </span>
@@ -192,7 +192,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/yolo.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/yolo.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">The Robot-Creativity Project</span>
@@ -219,7 +219,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/emote.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/emote.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">EMOTE</span>
@@ -244,7 +244,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/amigos.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/amigos.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">AMIGOS</span>
@@ -267,7 +267,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/cowriter3.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/cowriter3.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">Co-writer</span>
@@ -289,7 +289,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/cubus.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/cubus.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">CUBUS</span>
@@ -311,7 +311,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/moduland.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/moduland.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">MODULAND</span>
@@ -334,7 +334,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/metaphors.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/metaphors.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">Robot Metaphors</span> is a project that explores the use of metaphors for generating novel ideas, reframing existing problems, and eliciting new perspectives of human-robot interaction. Through metaphors, this project proposes new ways of using, relating to, and co-existing with the robots. We aim to inspire a new and different co-living future with robots. <br>
@@ -369,7 +369,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/eup.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/eup.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">Robot Programs</span> is a project that investigates how novice programmers naturally express robot programs. We uncovered a mismatch between natural tendencies to program robots and enforced coding structure of block-based programming, which has implications for the design of easily learned end-user robot programming interfaces and systems.<br>
@@ -388,7 +388,7 @@ faculty affiliate at the <a href="https://bids.berkeley.edu/" target="_blank">Be
 
 <div class="project">
 	<div class="left_wrapper"><div class="thumbnail_wrapper">
-	<div class="thumbnail" style="background-image: url(./assets/images/theory.png)"></div>
+	<div class="thumbnail" style="background-image: url(./assets/images/theory.jpg)"></div>
 	</div></div>
 	<div class="project_description">
 	<span class="lead">Theory in Human-Robot Interaction</span> is a project that theoretically characterized the design space of social robots. Social robots were characterized accros 7 dimensions inclsuing appearance, social capabilities, purpose and application area, relational role, autonomy and intelligence, proximity, and temporal profile.<br>
