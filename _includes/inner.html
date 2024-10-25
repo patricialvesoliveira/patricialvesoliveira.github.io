@@ -1,16 +1,14 @@
-    <main class="page-content" aria-label="Content">
-
-
-{% if page.include_alert %}
+<main class="page-content" aria-label="Content">
+      {% if page.include_alert %}
       <div class="alert">
-      <div class="alertinner orange">
-      I am an Assistant Professor of Robotics at the University of Michigan.
+            <div class="alertinner orange">
+                  I am an Assistant Professor of Robotics at the University of Michigan.
 
+            </div>
       </div>
-      </div>
-{% endif %}
+      {% endif %}
 
       <div class="wrapper">
-        	{{ content }}
+            {{ content }}
       </div>
-    </main>
+</main>
