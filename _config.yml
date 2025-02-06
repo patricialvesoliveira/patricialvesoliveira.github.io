@@ -10,8 +10,8 @@ descriptionshort: >- # this means to ignore newlines until "baseurl:"
   Her research focuses on human-robot interaction, health sciences, and design research.
 descriptionlong: >- # this means to ignore newlines until "baseurl:"
   Original website design by Sarah Chasins.
-baseurl: "/patricialvesoliveira.github.io" # the subpath of your site, e.g. /blog
-url: "https://elijahcantu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://patricialvesoliveira.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: p_alvesoliveira
 github_username:  patricialvesoliveira
 youtube_url: https://www.youtube.com/channel/UCwjtF3elK-TdKBRev-JQZrA
