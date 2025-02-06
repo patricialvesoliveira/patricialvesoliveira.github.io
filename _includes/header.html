@@ -3,7 +3,7 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" href="{{ "/" | relative_url }}" >{{ site.title | escape }}</a>
   
     {% if page_paths %}
       <nav class="site-nav">
@@ -31,6 +31,8 @@
               {% endif %}
             {% endunless %}
           {% endfor %}
+          <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate" target="_blank" rel="noopener noreferrer">Papers</a>
+
         </div>
       </nav>
     {% endif %}

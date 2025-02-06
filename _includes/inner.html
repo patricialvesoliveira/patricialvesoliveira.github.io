@@ -1,15 +1,13 @@
-    <main class="page-content" aria-label="Content">
-
-
-{% if page.include_alert %}
+<main class="page-content" aria-label="Content">
+      {% if page.include_alert %}
       <div class="alert">
-      <div class="alertinner orange">
-      In Fall 2020, I will start at UC Berkeley as an Assistant Professor of Electrical Engineering and Computer Sciences.
+            <div class="alertinner orange">
+                  Patrícia Alves-Oliveira is an Assistant Professor of Robotics at the University of Michigan.
+            </div>
       </div>
-      </div>
-{% endif %}
+      {% endif %}
 
       <div class="wrapper">
-        	{{ content }}
+            {{ content }}
       </div>
-    </main>
+</main>

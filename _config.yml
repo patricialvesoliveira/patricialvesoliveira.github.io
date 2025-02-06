@@ -1,22 +1,12 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Patrícia Alves-Oliveira
-email: patri at cs dot washington dot edu
+email: robopati at umich dot edu
 descriptionshort: >- # this means to ignore newlines until "baseurl:"
-  Patrícia Alves-Oliveira is a Senior UX Designer at Amazon.
+  Patrícia Alves-Oliveira is an Assistant Professor of Robotics at the University of Michigan.
   Her research focuses on human-robot interaction, health sciences, and design research.
 descriptionlong: >- # this means to ignore newlines until "baseurl:"
   Original website design by Sarah Chasins.
@@ -25,24 +15,10 @@ url: "https://patricialvesoliveira.com" # the base hostname & protocol for your 
 twitter_username: p_alvesoliveira
 github_username:  patricialvesoliveira
 youtube_url: https://www.youtube.com/channel/UCwjtF3elK-TdKBRev-JQZrA
-title_image: /assets/images/patriciaphoto.jpg
-
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+linkedin_username: patricia-alves-oliveira
+title_image: /assets/images/patriciaphoto.jpg #header photo file location, include / at the start
+google_scholar_link: "https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate"
 
 permalink: /blog/:title:output_ext
+theme: null
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
