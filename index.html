@@ -47,14 +47,12 @@ layout: default
 			{% for course in site.data.teaching %}
 			<div style="margin-bottom:3px;">
 				<span class='service-conf'>{% if course.code %}{{ course.code }} &minus; {% endif %}{{ course.name }} ({{course.term}},</span>
-	
 				<span class='service-type {% if course.current %} service-organizing  {% elsif course.past %} service-reviewing {% endif %}'>{{ course.current }}{{ course.past }}</span>)
 			</div>
 			{% endfor %}
 	</div>
 	<div class="right-box press need-padding">
 		<div class="topic small-margin">Press</div>
-	
 		<!-- Loop to show only the first 5 press items initially -->
 		{% assign press_items = site.data.press | slice: 0, 5 %}
 		{% for item in press_items %}
@@ -62,9 +60,6 @@ layout: default
 				{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 			</div>
 		{% endfor %}
-	
-		
-	
 		<!-- Hidden press items to be revealed later -->
 		<div id="extra-press" style="display: none;">
 			{% assign extra_press_items = site.data.press | slice: 5, site.data.press.size %}
@@ -74,7 +69,6 @@ layout: default
 				</div>
 			{% endfor %}
 		</div>
-	
 		<!-- More button to show additional press items -->
 		{% if site.data.press.size > 5 %}
 			<button id="more-press" class="show-more ui-button">Show More</button>
@@ -84,7 +78,6 @@ layout: default
 				// Toggle visibility of additional press items
 				var extraPress = document.getElementById('extra-press');
 				var moreButton = document.getElementById('more-press');
-				
 				if (extraPress.style.display === 'none') {
 					extraPress.style.display = 'block';
 					moreButton.textContent = 'Show Less';
@@ -95,7 +88,6 @@ layout: default
 			});
 		</script>
 	</div>
-	
 </div>
 <div class="clearfix press-and-news" style="overflow: hidden;">
 	<div class="left-box teachings need-padding">
@@ -110,8 +102,9 @@ layout: default
 		{% endif %}
 	</div>
 	{% endfor %}
+	<a href="https://robotdesign.studio/team" target="_blank">Full Team</a>
 	{% if site.data.students.alumni %}
-	<div class="topic small-margin">Alumni</div>
+	<div class="topic small-margin" style="padding-top:4px;">Alumni</div>
 	{% for alum in site.data.students.alumni %}
 	<div >
 		<span class='service-conf'>{{ alum.name }}</span>
@@ -140,11 +133,10 @@ layout: default
 {% for item in site.data.news %}
 <div  >
 	{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
+	{% if item.video %}- <a href="{{item.video}}" target="_blank" style=" position: relative; top: 1px;"><i class="fa-brands fa-youtube"></i></a>{% endif %}
 </div>
 {% endfor %}
 <div class="topic small-margin">Open Access</div>
 {% for item in site.data.open-access %}
 	<div >{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}</div>
 {% endfor %}
-
-
