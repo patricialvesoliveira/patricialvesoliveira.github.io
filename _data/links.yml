@@ -1,0 +1,21 @@
+- icon: fa-solid fa-envelope
+  url: mailto:robopati@umich.edu
+  text: robopati@umich.edu
+
+- icon: fa-brands fa-google-scholar
+  url: https://scholar.google.pt/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&sortby=pubdate
+
+- icon: fa-brands fa-linkedin
+  url: https://www.linkedin.com/in/patricia-alves-oliveira/
+
+- icon: fa-brands fa-twitter
+  url: https://x.com/p_alvesoliveira
+
+- icon: fa-brands fa-github
+  url: https://github.com/patricialvesoliveira
+
+- icon: fa-brands fa-youtube
+  url: https://www.youtube.com/@patriciaalves-oliveira4578
+
+- img: robot-studio.png
+  url: https://www.robotdesign.studio

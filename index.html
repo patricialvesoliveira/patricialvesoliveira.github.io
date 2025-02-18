@@ -1,0 +1,150 @@
+---
+layout: default
+---
+<div class="footer-col-wrapper clearfix">
+	<div class="footer-col body-col-2" style="margin:0px;">
+		<img src="assets/images/{{site.title_image}}" id="self_img" class="left padded"   style="margin:0px; margin-right:15px;"
+			alt="Patrícia Alves-Oliveira Headshot">
+	</div>
+	<div class="footer-col body-col-3"  style="margin:0px; padding-top: 5px;">
+		<div>
+			<span class="focus">
+				Assistant Professor
+			</span> of <a href="https://robotics.umich.edu/" target="_blank">Robotics</a> at the
+			<a href="https://umich.edu/" target="_blank">University of Michigan</a>
+		</div>
+		<div>
+			<span class="focus">Area</span>: Human-Robot Interaction
+		</div>
+		<div style="margin-bottom:2px;">
+			<span class="focus">Focuses</span>: Human-Computer Interaction · Design Research · Health
+		</div>
+		{% for link in site.data.links %}
+		<a href="{{ link.url }}" target="_blank" style="margin-right: 5px; display: inline-flex; align-items: center; justify-content: center; height: 14px; {% if link.img %} position: relative; top: 2px; {% endif %}">
+			{% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+			{% if link.img %}
+				<img width="14" height="14" src="assets/images/{{ link.img }}">
+			{% endif %}
+		</a>
+	{% endfor %}
+	</div>
+</div>
+<div class="topic small-margin">Research Mission</div>
+{{ site.data.research-vision | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+	<div class="clearfix press-and-news">
+		<div class="left-box teachings need-padding" >
+		<div class="topic small-margin">Affiliations</div>
+		{{ site.data.index.affiliations | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+	</div>
+	<div class="right-box press need-padding">
+		<div class="topic small-margin">Projects</div>
+		{{ site.data.index.projects | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+	</div>
+</div>
+<div class="clearfix press-and-news">
+		<div class="left-box teachings need-padding">
+		<div class="topic small-margin">Teaching</div>
+			{% for course in site.data.teaching %}
+			<div style="margin-bottom:3px;">
+				<span class='service-conf'>{% if course.code %}{{ course.code }} &minus; {% endif %}{{ course.name }} ({{course.term}},</span>
+	
+				<span class='service-type {% if course.current %} service-organizing  {% elsif course.past %} service-reviewing {% endif %}'>{{ course.current }}{{ course.past }}</span>)
+			</div>
+			{% endfor %}
+	</div>
+	<div class="right-box press need-padding">
+		<div class="topic small-margin">Press</div>
+	
+		<!-- Loop to show only the first 5 press items initially -->
+		{% assign press_items = site.data.press | slice: 0, 5 %}
+		{% for item in press_items %}
+			<div>
+				{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+			</div>
+		{% endfor %}
+	
+		
+	
+		<!-- Hidden press items to be revealed later -->
+		<div id="extra-press" style="display: none;">
+			{% assign extra_press_items = site.data.press | slice: 5, site.data.press.size %}
+			{% for item in extra_press_items %}
+				<div>
+					{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+				</div>
+			{% endfor %}
+		</div>
+	
+		<!-- More button to show additional press items -->
+		{% if site.data.press.size > 5 %}
+			<button id="more-press" class="show-more ui-button">Show More</button>
+		{% endif %}
+		<script>
+			document.getElementById('more-press').addEventListener('click', function() {
+				// Toggle visibility of additional press items
+				var extraPress = document.getElementById('extra-press');
+				var moreButton = document.getElementById('more-press');
+				
+				if (extraPress.style.display === 'none') {
+					extraPress.style.display = 'block';
+					moreButton.textContent = 'Show Less';
+				} else {
+					extraPress.style.display = 'none';
+					moreButton.textContent = 'Show More';
+				}
+			});
+		</script>
+	</div>
+	
+</div>
+<div class="clearfix press-and-news" style="overflow: hidden;">
+	<div class="left-box teachings need-padding">
+	<div class="topic small-margin">Students</div>
+	{% for student in site.data.students.current %}
+	<div >
+		<span class='service-conf'>{{ student.name }}</span>
+		{% if student.in %}
+		<a href="{{ student.in }}" target="_blank">
+			<i class="fa-brands fa-linkedin"></i>
+		</a>
+		{% endif %}
+	</div>
+	{% endfor %}
+	{% if site.data.students.alumni %}
+	<div class="topic small-margin">Alumni</div>
+	{% for alum in site.data.students.alumni %}
+	<div >
+		<span class='service-conf'>{{ alum.name }}</span>
+		{% if alum.in %}
+		<a href="{{ alum.in }}" target="_blank">
+			<i class="fa-brands fa-linkedin"></i>
+		</a>
+		{% endif %}
+	</div>
+	{% endfor %}
+	{% endif %}
+</div>
+<div class="right-box press need-padding">
+	<div class="topic small-margin">Service</div>
+	<div>
+		{% for service in site.data.service %}
+		<div style="margin-bottom:3px;">
+			<span class='service-conf'>{{ service.conf }}</span>
+			<span class='service-type {{ service.role }}'>{{ service.type }}</span>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+</div>
+<div class="topic small-margin">News</div>
+{% for item in site.data.news %}
+<div  >
+	{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
+</div>
+{% endfor %}
+<div class="topic small-margin">Open Access</div>
+{% for item in site.data.open-access %}
+	<div >{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}</div>
+{% endfor %}
+
+

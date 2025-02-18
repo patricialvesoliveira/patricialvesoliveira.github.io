@@ -42,8 +42,8 @@ a:visited {
 	outline: none;
 }
 a:hover {
-	color: #FF955C;
-	text-decoration: none;
+	
+	text-decoration: underline;
 	outline: none;
 }
 a:active {
@@ -696,13 +696,13 @@ ul.share-buttons .sr-only{
 .ui-button{
 	font-family:  Avenir, 'Lato', Helvetica Neue, Helvetica, Arial!important;
 	color: black!important;
-	background-color: #FFC8AB!important;
-	border: #FF955C 1px solid!important;
+	background-color: #F5F5F5!important;
+	border: #F5F5F5 1px solid!important;
+	border-radius: 4px;
 }
 .ui-button:hover{
-	background-color: #FFB48C!important;
+	background-color: #f2e6fc!important;
 }
-
 .padding_top{
   padding-top: 15px;
 }
@@ -710,17 +710,28 @@ ul.share-buttons .sr-only{
 
 
 .small-margin{
-	padding-bottom: 8px !important;
+	padding-bottom: 2px !important;
+	padding-top:16px;
 }
 
 .left-box{
 	float: left;
-	width: 35%;
+	width: 50%;
 }
 .right-box{
 	float:right;
-	width: 65%;
+	width: 50%;
 }
+
+.left-box.teaching{
+	float: left;
+	width: 50%;
+}
+.right-box.press{
+	float:right;
+	width: 50%;
+}
+
 
 .grid-wrapper {
   display: grid;
@@ -758,6 +769,11 @@ ul.share-buttons .sr-only{
 	padding-top: 4px;
 }
 
+body, html{
+	font-size: 12px;
+}
+
+
 .padding{
 	padding-top: 20px;
 }
@@ -775,4 +791,10 @@ a:focus, button:focus {
 .body-col-3
 {
 	margin-top: 2px;
+}
+
+.need-padding{
+
+	padding-bottom: 5px;
+
 }

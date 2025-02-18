@@ -1,24 +1,10 @@
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Patrícia Alves-Oliveira
-email: robopati at umich dot edu
-descriptionshort: >- # this means to ignore newlines until "baseurl:"
-  Patrícia Alves-Oliveira is an Assistant Professor of Robotics at the University of Michigan.
-  Her research focuses on human-robot interaction, health sciences, and design research.
-descriptionlong: >- # this means to ignore newlines until "baseurl:"
-  Original website design by Sarah Chasins.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://patricialvesoliveira.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: p_alvesoliveira
-github_username:  patricialvesoliveira
-youtube_url: https://www.youtube.com/channel/UCwjtF3elK-TdKBRev-JQZrA
-linkedin_username: patricia-alves-oliveira
-title_image: /assets/images/patriciaphoto.jpg #header photo file location, include / at the start
-google_scholar_link: "https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate"
+email: robopati@umich.edu
 
-permalink: /blog/:title:output_ext
+baseurl: "" 
+url: "https://patricialvesoliveira.com" 
+
+title_image: patricia.jpg
+google_scholar_link: "https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate"
 theme: null
 
