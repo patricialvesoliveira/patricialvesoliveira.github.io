@@ -22,6 +22,10 @@ layout: default
 		<div style="margin-bottom:2px;">
 			<span class="focus">Lab</span>: <a href="https://robotdesign.studio" target="_blank">Robot Studio</a>
 		</div>
+		<div style="margin-bottom:2px;">
+			<span class="focus">Affiliations</span>: <a href="https://robotdesign.studio" target="_blank">{{ site.data.index.affiliations | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+			</a>
+		</div>
 		{% for link in site.data.links %}
 		<a href="{{ link.url }}" target="_blank" style="margin-right: 5px; display: inline-flex; align-items: center; justify-content: center; height: 14px; {% if link.img %} position: relative; top: 2px; {% endif %}">
 			{% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
@@ -35,14 +39,19 @@ layout: default
 <div class="topic small-margin">Research Mission</div>
 {{ site.data.research-vision | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 	<div class="clearfix press-and-news">
-		<div class="left-box teachings need-padding" >
-		<div class="topic small-margin">Affiliations</div>
-		{{ site.data.index.affiliations | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-	</div>
-	<div class="right-box press need-padding">
+	<div class="left-box press need-padding">
 		<div class="topic small-margin">Projects</div>
 		{{ site.data.index.projects | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 	</div>
+	
+		<div class="right-box  need-padding" >
+		<div class="topic small-margin">Open Access</div>
+		<div >{% for item in site.data.open-access %}
+
+			{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}</div>
+	{% endfor %}
+
+
 </div>
 <div class="clearfix press-and-news">
 		<div class="left-box teachings need-padding">
@@ -139,7 +148,16 @@ layout: default
 	{% if item.video %}- <a href="{{item.video}}" target="_blank" style=" position: relative; top: 1px;"><i class="fa-brands fa-youtube"></i></a>{% endif %}
 </div>
 {% endfor %}
-<div class="topic small-margin">Open Access</div>
-{% for item in site.data.open-access %}
-	<div >{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}</div>
-{% endfor %}
+
+
+<style>
+.clearfix.press-and-news {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px; /* Adjust the gap as needed */
+}
+
+.left-box, .right-box {
+    flex: 1; /* This ensures both boxes take up equal space */
+}
+</style>
