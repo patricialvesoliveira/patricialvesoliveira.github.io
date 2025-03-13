@@ -60,7 +60,7 @@ layout: default
 		<div class="topic small-margin">Teaching</div>
 			{% for course in site.data.teaching %}
 			<div style="margin-bottom:3px;">
-				{% if course.link %}<a href="{{course.link}}" target="_blank">{% endif %}{% if course.code %}{{ course.code }} &minus; {% endif %}{{ course.name }}{% if course.link %}</a>{% endif %} 
+				{% if course.link %}<a href="teaching/#{{course.link}}">{% endif %}{% if course.code %}{{ course.code }} &minus; {% endif %}{{ course.name }}{% if course.link %}</a>{% endif %} 
 				({{course.term}},<span class='service-type {% if course.current %} service-organizing  {% elsif course.past %} service-reviewing {% endif %}'>{{ course.current }}{{ course.past }}</span>)
 			</div>
 			{% endfor %}

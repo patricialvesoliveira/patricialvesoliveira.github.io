@@ -1,30 +1,30 @@
 - code: ROB 340
   name: HRI
-  term: Winter 2025
+  term: 2025
   current: University of Michigan
 
 - code: ROB 498/599
   name: HRI Design
-  term: Winter 2024
+  term: 2024
   current: University of Michigan
-  link: Design-For-HRI-Winter-2024
+  link: design-for-HRI
 
 - name: Directed Research Group
   term: 2020-2022
   past: University of Washington
   
 - name: Robotics Colloquium
-  term: Fall 2021
+  term: 2021
   past: University of Washington
   role: service-reviewing
   
 - name: Social Robotics 
-  term: Fall 2016, 2019
+  term: 2016, 2019
   past: IST Technical Institute of Lisbon
   role: service-reviewing
   
 - name: Learning, Motivation, and Emotions 
-  term: Spring 2016
+  term: 2016
   past: ISCTE-IUL
   role: service-organizing
   
