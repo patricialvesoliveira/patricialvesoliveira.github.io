@@ -809,3 +809,8 @@ footer {
             display: flex !important;
             flex-direction: column !important;
         }
+
+		.page-content{
+			padding-bottom:16px;
+			padding-top:16px;
+		}
