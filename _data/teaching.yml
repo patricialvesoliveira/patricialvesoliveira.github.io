@@ -1,5 +1,24 @@
-- ROB340 - [Human-Robot Interaction](teaching#HRI) (Winter 2025)
+#- ROB340 - [Human-Robot Interaction](teaching#HRI) (Winter 2025)
 
-- ROB 498/599 - [Design for Human-Robot Interaction](teaching#design-for-HRI) (Winter 2024)
+#- ROB 498/599 - [Design for Human-Robot Interaction](teaching#design-for-HRI) (Winter 2024)
 
 
+
+
+- id: "HRI"
+  code: ROB 340
+  title: Human-Robot Interaction
+  image: "/teaching/placeholder.jpeg"
+  description: |
+    This course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include metrics and analysis for human studies of robots, measuring human performance in the context of robotic systems, and exploring how robot behaviors such as gaze, movement, etc, are perceived by humans. By the end of this class, you will know the types of metrics, studies, and analyses you can conduct to understand the performance of a robot system informed by human feedback.
+  terms:
+    - Winter 2025
+
+- id: "design-for-HRI"
+  code: ROB 498/599
+  title: Design For Human-Robot Interaction
+  image: "/teaching/design-for-human-robot-interaction.png"
+  description: |
+    This advanced course covers fundamentals of Design for Human-Robot Interaction, leading to the creation of memorable relationships with robots. Topics include Frameworks for Robot Design; ideation strategies for robotics such as body-storming and speculation; participatory design with end-users and communities; creation of mock-ups and prototypes to test ideas; development of qualitative and quantitative key-performance indicators to measure the success of the robot; design for ethics, equality, and justice in robotics. We will create a vision for relationships between humans and robots that are inspiring, refined, and magical. This course will prepare you to be a full-stack interaction robot designer.
+  terms:
+    - "[Winter 2024](Design-For-HRI-Winter-2024)"

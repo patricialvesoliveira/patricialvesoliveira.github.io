@@ -73,15 +73,17 @@ layout: default
 			{% endif %}
 		</div>
 		
-<div class="column right-column need-padding" id="teaching">
-  <div class="topic small-margin">Teaching</div>
-  {% for course in site.data.teaching %}
-    <div style="margin-bottom:3px;">
-		{{ course | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-    </div>
-  {% endfor %}
-</div>
-
+		<div class="column right-column need-padding" id="teaching">
+			<div class="topic small-margin">Teaching</div>
+			{% for course in site.data.teaching %}
+			  <div style="margin-bottom:3px;">
+				{{course.code}} &ndash; <a href=teaching#{{ course.id }}>{{ course.title}}</a>
+				{% if course.terms %}
+					({% for term in course.terms %}{{ term | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}, {% endunless %}{% endfor %})
+				{% endif %}
+			  </div>
+			{% endfor %}
+		  </div>
 	</div>
 	
 	<div class="row">
@@ -182,30 +184,15 @@ layout: default
 		<div class="topic small-margin">Projects</div>
 		{{ site.data.index.projects | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 	</div>
-	
-
 </div>
 
 
-
-
 <style>
-.clearfix.press-and-news {
-    display: flex;
-    justify-content: space-between;
-    gap: -10px; /* Adjust the gap as needed */
-}
-
-.left-box, .right-box {
-    flex: 1; /* This ensures both boxes take up equal space */
-}
 
 @media (max-width: 768px) {
 #picture{
 	width:100px;
-	
 }
-
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -213,18 +200,17 @@ layout: default
     .footer-col-wrapper {
         display: flex;
         flex-direction: row;
-        align-items: flex-start; /* Align items to the top */
+        align-items: flex-start; 
     }
 
     .footer-col.body-col-2 {
         flex-shrink: 0;
         margin-right: 15px;
-        margin-bottom: 0; /* Ensures no extra bottom margin */
+        margin-bottom: 0; 
     }
 
-    /* Optional: To ensure the image stays at the top-left */
     #self_img {
-        margin-top: 0; /* Ensure no extra top margin */
+        margin-top: 0; 
     }
 
     .footer-col.body-col-3 {
@@ -244,38 +230,38 @@ layout: default
 
 
 .row {
-			display: flex;
-			flex-wrap: wrap;
-		}
-		.column {
-			
-			box-sizing: border-box;
-		}
-		.left-column {
-			flex: 1.25;
-		}
-		.right-column {
-			flex: 1.75;
-		}
-		
-		.topic {
-			font-weight: bold;
-			margin-bottom: 10px;
-		}
-		.show-more {
-			padding: 4px 8px;
-			cursor: pointer;
-			border: none;
-			background: #F5F5F5;
-			color: black;
-			border-radius: 4px;
-			font-size:12px;
-			margin-left:-2px;
-		}
-		.show-more:hover{
-			background:#f2e6fc;
+	display: flex;
+	flex-wrap: wrap;
+}
+.column {
+	
+	box-sizing: border-box;
+}
+.left-column {
+	flex: 1.25;
+}
+.right-column {
+	flex: 1.75;
+}
 
-		}
+.topic {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.show-more {
+	padding: 4px 8px;
+	cursor: pointer;
+	border: none;
+	background: #F5F5F5;
+	color: black;
+	border-radius: 4px;
+	font-size:12px;
+	margin-left:-2px;
+}
+.show-more:hover{
+	background:#f2e6fc;
+
+}
 </style>
 <script>
     document.getElementById('more-press').addEventListener('click', function() {
