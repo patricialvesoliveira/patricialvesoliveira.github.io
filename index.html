@@ -6,7 +6,7 @@ layout: default
 		<img src="assets/images/{{site.title_image}}" id="self_img" class="left padded"   style="margin:0px; margin-right:15px;"
 			alt="Patrícia Alves-Oliveira Headshot">
 	</div>
-	<div class="footer-col body-col-3"  style="margin:0px;">
+	<div class="footer-col body-col-3"  style="margin:0px; font-size:14px;">
 		<div>
 			<span class="focus">
 				Assistant Professor
@@ -38,125 +38,162 @@ layout: default
 </div>
 	</div>
 </div>
-<div class="topic small-margin">Research Mission</div>
-{{ site.data.research-vision | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-	<div class="clearfix press-and-news">
+
+<div style="margin-top:16px;"><strong style="font-size:13px; margin-right:8px !important;">Statement.</strong>
+{{ site.data.index.statement | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+	</div>
+
+	
+	<div class="row">
+		<div class="column left-column need-padding" id="students">
+			<div class="topic small-margin">Students</div>
+			{% for student in site.data.students.current %}
+			<div>
+				<span class='service-conf'>{{ student.name }}</span>
+				{% if student.in %}
+				<a href="{{ student.in }}" target="_blank">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+				{% endif %}
+			</div>
+			{% endfor %}
+			<a href="https://robotdesign.studio/team" target="_blank">Full Team</a>
+			{% if site.data.students.alumni %}
+			<div class="topic small-margin" style="padding-top:4px;">Alumni</div>
+			{% for alum in site.data.students.alumni %}
+			<div>
+				<span class='service-conf'>{{ alum.name }}</span>
+				{% if alum.in %}
+				<a href="{{ alum.in }}" target="_blank">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+				{% endif %}
+			</div>
+			{% endfor %}
+			{% endif %}
+		</div>
+		
+<div class="column right-column need-padding" id="teaching">
+  <div class="topic small-margin">Teaching</div>
+  {% for course in site.data.teaching %}
+    <div style="margin-bottom:3px;">
+		{{ course | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+    </div>
+  {% endfor %}
+</div>
+
+	</div>
+	
+	<div class="row">
+		<div class="column left-column need-padding" id="press">
+			<div class="topic small-margin">Press</div>
+			{% assign press_items = site.data.press | slice: 0, 9 %}
+			{% for item in press_items %}
+			<div>
+				{{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+			</div>
+			{% endfor %}
+			<div id="extra-press" style="display: none;">
+				{% assign extra_press_items = site.data.press | slice: 9, site.data.press.size %}
+				{% for item in extra_press_items %}
+				<div>
+					{{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+				</div>
+				{% endfor %}
+			</div>
+			{% if site.data.press.size > 9 %}
+			<button id="more-press" class="show-more">Show More</button>
+			{% endif %}
+		</div>
+	
+		<div class="column right-column need-padding" id="news">
+			<div class="topic small-margin">News</div>
+			{% assign news_items = site.data.news | slice: 0, 9 %}
+			{% for item in news_items %}
+			<div>
+				{% if item.first %}
+				{{ item[0] | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+				{% if item[1] %}
+				- <a href="{{ item[1] }}" target="_blank" style="position: relative; top: 1px;">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				{% endif %}
+				{% else %}
+				{{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+				{% endif %}
+			</div>
+			{% endfor %}
+			<div id="extra-news" style="display: none;">
+				{% assign extra_news_items = site.data.news | slice: 9, site.data.news.size %}
+				{% for item in extra_news_items %}
+				<div>
+					{% if item.first %}
+					{{ item[0] | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+					{% if item[1] %}
+					- <a href="{{ item[1] }}" target="_blank" style="position: relative; top: 1px;">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+					{% endif %}
+					{% else %}
+					{{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+					{% endif %}
+				</div>
+				{% endfor %}
+			</div>
+			{% if site.data.news.size > 9 %}
+			<button id="more-news" class="show-more">Show More</button>
+			{% endif %}
+		</div>
+	</div>
+	
+	
+
+	<div class="row">
+		<div class="column left-column need-padding">
+			<div class="topic small-margin">Service</div>
+			<div>
+				{% for service in site.data.service.left %}
+				<div style="margin-bottom:3px;">
+					<span class='service-conf'>{{ service.conf }}</span>
+					<span class='service-type {{ service.role }}'>{{ service.type }}</span>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	
+		<div class="column right-column need-padding">
+			<!-- Add a placeholder title for the right column to maintain alignment -->
+			<div class="topic small-margin" style="visibility: hidden;">Service</div>
+			<div>
+				{% for service in site.data.service.right %}
+				<div style="margin-bottom:3px;">
+					<span class='service-conf'>{{ service.conf }}</span>
+					<span class='service-type {{ service.role }}'>{{ service.type }}</span>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	
+	
+	
+<div class="clearfix press-and-news">
 	<div class="left-box press need-padding">
 		<div class="topic small-margin">Projects</div>
 		{{ site.data.index.projects | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 	</div>
 	
-		<div class="right-box  need-padding" >
-		<div class="topic small-margin">Open Access</div>
-		<div >{% for item in site.data.open-access %}
-
-			{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}</div>
-	{% endfor %}
-
 
 </div>
-<div class="clearfix press-and-news">
-		<div class="left-box teachings need-padding">
-		<div class="topic small-margin">Teaching</div>
-			{% for course in site.data.teaching %}
-			<div style="margin-bottom:3px;">
-				{% if course.link %}<a href="teaching.html#{{course.link}}">{% endif %}{% if course.code %}{{ course.code }} &minus; {% endif %}{{ course.name }}{% if course.link %}</a>{% endif %} 
-				({{course.term}},<span class='service-type {% if course.current %} service-organizing  {% elsif course.past %} service-reviewing {% endif %}'>{{ course.current }}{{ course.past }}</span>)
-			</div>
-			{% endfor %}
-	</div>
-	<div class="right-box press need-padding">
-		<div class="topic small-margin">Press</div>
-		<!-- Loop to show only the first 5 press items initially -->
-		{% assign press_items = site.data.press | slice: 0, 5 %}
-		{% for item in press_items %}
-			<div>
-				{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-			</div>
-		{% endfor %}
-		<!-- Hidden press items to be revealed later -->
-		<div id="extra-press" style="display: none;">
-			{% assign extra_press_items = site.data.press | slice: 5, site.data.press.size %}
-			{% for item in extra_press_items %}
-				<div>
-					{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				</div>
-			{% endfor %}
-		</div>
-		<!-- More button to show additional press items -->
-		{% if site.data.press.size > 5 %}
-			<button id="more-press" class="show-more ui-button">Show More</button>
-		{% endif %}
-		<script>
-			document.getElementById('more-press').addEventListener('click', function() {
-				// Toggle visibility of additional press items
-				var extraPress = document.getElementById('extra-press');
-				var moreButton = document.getElementById('more-press');
-				if (extraPress.style.display === 'none') {
-					extraPress.style.display = 'block';
-					moreButton.textContent = 'Show Less';
-				} else {
-					extraPress.style.display = 'none';
-					moreButton.textContent = 'Show More';
-				}
-			});
-		</script>
-	</div>
-</div>
-<div class="clearfix press-and-news" style="overflow: hidden;">
-	<div class="left-box teachings need-padding">
-	<div class="topic small-margin">Students</div>
-	{% for student in site.data.students.current %}
-	<div >
-		<span class='service-conf'>{{ student.name }}</span>
-		{% if student.in %}
-		<a href="{{ student.in }}" target="_blank">
-			<i class="fa-brands fa-linkedin"></i>
-		</a>
-		{% endif %}
-	</div>
-	{% endfor %}
-	<a href="https://robotdesign.studio/team" target="_blank">Full Team</a>
-	{% if site.data.students.alumni %}
-	<div class="topic small-margin" style="padding-top:4px;">Alumni</div>
-	{% for alum in site.data.students.alumni %}
-	<div >
-		<span class='service-conf'>{{ alum.name }}</span>
-		{% if alum.in %}
-		<a href="{{ alum.in }}" target="_blank">
-			<i class="fa-brands fa-linkedin"></i>
-		</a>
-		{% endif %}
-	</div>
-	{% endfor %}
-	{% endif %}
-</div>
-<div class="right-box press need-padding">
-	<div class="topic small-margin">Service</div>
-	<div>
-		{% for service in site.data.service %}
-		<div style="margin-bottom:3px;">
-			<span class='service-conf'>{{ service.conf }}</span>
-			<span class='service-type {{ service.role }}'>{{ service.type }}</span>
-		</div>
-		{% endfor %}
-	</div>
-</div>
-</div>
-<div class="topic small-margin">News</div>
-{% for item in site.data.news %}
-<div  >
-	{{ item.text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
-	{% if item.video %}- <a href="{{item.video}}" target="_blank" style=" position: relative; top: 1px;"><i class="fa-brands fa-youtube"></i></a>{% endif %}
-</div>
-{% endfor %}
+
+
 
 
 <style>
 .clearfix.press-and-news {
     display: flex;
     justify-content: space-between;
-    gap: 35px; /* Adjust the gap as needed */
+    gap: -10px; /* Adjust the gap as needed */
 }
 
 .left-box, .right-box {
@@ -197,5 +234,70 @@ layout: default
     }
 }
 
+.topic.small-margin{
+	font-size:13px;
+}
+.page-content{
+	padding-bottom:15px;
+	padding-top:15px;
+}
 
+.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.column {
+			
+			box-sizing: border-box;
+		}
+		.left-column {
+			flex: 1.25;
+		}
+		.right-column {
+			flex: 1.75;
+		}
+		
+		.topic {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.show-more {
+			padding: 4px 8px;
+			cursor: pointer;
+			border: none;
+			background: #F5F5F5;
+			color: black;
+			border-radius: 4px;
+			font-size:12px;
+			margin-left:-2px;
+		}
+		.show-more:hover{
+			background:#f2e6fc;
+
+		}
 </style>
+<script>
+    document.getElementById('more-press').addEventListener('click', function() {
+        var extraPress = document.getElementById('extra-press');
+        var moreButton = document.getElementById('more-press');
+        if (extraPress.style.display === 'none') {
+            extraPress.style.display = 'block';
+            moreButton.textContent = 'Show Less';
+        } else {
+            extraPress.style.display = 'none';
+            moreButton.textContent = 'Show More';
+        }
+    });
+
+    document.getElementById('more-news').addEventListener('click', function() {
+        var extraNews = document.getElementById('extra-news');
+        var moreButton = document.getElementById('more-news');
+        if (extraNews.style.display === 'none') {
+            extraNews.style.display = 'block';
+            moreButton.textContent = 'Show Less';
+        } else {
+            extraNews.style.display = 'none';
+            moreButton.textContent = 'Show More';
+        }
+    });
+</script>
