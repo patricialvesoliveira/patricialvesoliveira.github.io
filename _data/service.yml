@@ -1,24 +1,56 @@
-left:
-  - conf: NSF Proposal Evaluation 2021
-    type: Panelist
-    role: service-reviewing
-    
-  - conf: ICRA Debates 2021
-    type: Co-Organizer
-    role: service-organizing
-    
-  - conf: Frontiers 2021
-    type: Topic Editor
-    role: service-reviewing
-right:
-  - conf: HRI 2021
-    type: SDC Co-Chair
-    role: service-organizing
-    
-  - conf: RSS 2021
-    type: Publicity Chair
-    role: service-organizing
-    
-  - conf: Pioneers RSS 2021
-    type: General Chair
-    role: service-organizing
+
+2021:
+- conf: NSF Proposal Evaluation 
+  role: Panelist
+  color: evaluation
+  
+- conf: Frontiers 
+  role: Topic Editor
+  color: evaluation
+
+- conf: ICRA Debates
+  role: Co-Organizer
+  color: leadership
+  
+- conf: HRI 
+  role: SDC Co-Chair
+  color: leadership
+  
+- conf: RSS
+  role: Publicity Chair
+  color: leadership
+  
+- conf: Pioneers RSS 
+  role: General Chair
+  color: leadership
+
+2023:
+- conf: '[RO-MAN](https://ro-man2023.org/main)'
+  role: Reviewer
+  color: evaluation
+
+2024:
+- conf: NSF Proposal Evaluation
+  role: Panelist
+  color: evaluation
+
+- conf: Book "[The Heart & The Chip](https://www.americanscientist.org/article/a-brave-new-robotic-world)"
+  role: Public Review
+  color: evaluation
+
+2025:
+- conf: '[C&C](https://cc.acm.org/2025/) Pictorials'
+  role: Program Committee
+  color: leadership
+
+- conf: '[RO-MAN](https://www.ro-man2025.org/)'
+  role: Awards Chair
+  color: leadership
+
+- conf: '[HRI](https://humanrobotinteraction.org/2025/)'
+  role: Program Committee
+  color: leadership
+
+- conf: '[CHI](https://chi2025.acm.org/)'
+  role: Program Committee
+  color: leadership

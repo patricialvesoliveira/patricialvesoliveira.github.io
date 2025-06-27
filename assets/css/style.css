@@ -749,11 +749,11 @@ ul.share-buttons .sr-only{
            column-gap: 20px;
 }
 
-.service-organizing{
+.leadership{
 	background-color: #f2e6fc;
 }
 
-.service-reviewing{
+.evaluation{
 	background-color: #F5F5F5;
 }
 
@@ -782,7 +782,7 @@ body, html{
 	margin-top:4px;
 }
 
-a:focus, button:focus {
+a:focus-visible, button:focus-visible {
 	outline: 2px solid #8bb9fe; 
 	outline-offset: 1px;
 	border-radius: 5px;

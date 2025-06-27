@@ -1,30 +1,73 @@
-- ['Feb 2025: Talk on “Inspiring Robots” at Chicago Creative Machines','https://www.youtube.com/live/Z4Q-wsOOVL4?si=h1RPqLpPXWb393qe&t=1017']
-- 'Feb 2025: Late-Breaking Work accepted at [CHI](https://chi2025.acm.org/)'
-- 'Feb 2025: Paper accepted in [ICRA Arts & Robotics](https://roboticart.org/icra2025/)'
-- 'Feb 2025: Poster accepted at [WeRobot 2025](https://www.werobot2025.ca/)'
-- 'Jan 2025: Launched the new class ROB340 at Univ Michigan '
-- 'Nov 2024: Keynote and panel at [FARI Conference](https://www.conference.fari.brussels/)'
-- 'Jul 2024: Received the [DARPA YFA](https://robotics.umich.edu/news/2025/authenticity-in-artwork-with-robotics-receives-darpa-young-faculty-award/)'
-- 'Mar 2024: [Workshop](https://dl.acm.org/doi/abs/10.1145/3610978.3638167) accepted at [HRI](https://humanrobotinteraction.org/2024/index.html)'
-- 'Mar 2024: Keynote at the Disability Visibility Symposium.'
-- 'Jan 2024: Launched the new class [Design for HRI](https://patricialvesoliveira.com/Design-For-HRI-Winter-2024/) at Univ Michigan '
-- 'Jan 2024: Launched [Robot Studio](https://www.robotdesign.studio/)!'
-- 'Jan 2024: Started as an Assistant Professor of [Robotics](https://robotics.umich.edu/) at the Univ Michigan'
-- 'Nov 2023: Started as a Senior UX Designer for [Astro](https://www.amazon.com/dp/B078NSDFSB?tag=googhydr-20&hvadid=548786426326&hvpos=&hvnetw=g&hvrand=4066728646543404240&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9016852&hvtargid=kwd-311708116926&ref=pd_sl_93l0lpqc21_e&gclid=Cj0KCQjwytS-BhCKARIsAMGJyzpzZ9bWu3cuLwa5vX83YiObLFVG4FLGpnDZ7FRypdgZqQGFN3RTL2saAl1uEALw_wcB) at Amazon Lab126'
-- 'Mar 2023: [Best Paper Award](https://dl.acm.org/doi/abs/10.1145/3568162.3576988) at [HRI](https://humanrobotinteraction.org/2023/index.html)'
-- ['Mar 2023: Video accepted at [HRI](https://humanrobotinteraction.org/2023/index.html)','https://dl.acm.org/doi/abs/10.1145/3568294.3580209']
-- 'Oct 2022: [Paper](https://dl.acm.org/doi/abs/10.1145/3526113.3545707) accepted at [UIST](https://uist.acm.org/uist2022/)'
-- 'Mar 2022: organized [workshop](https://theoriahri.wixsite.com/theoria) at [HRI](https://humanrobotinteraction.org/2022/)'
-- 'Mar 2022: Paper accepted at [HRI](http://7%20mar%202022/)'
-- 'Nov 2021: Paper accepted at [PLATEAU](https://2021.plateau-workshop.org/)'
-- 'Oct 2021: [Paper](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.983408/full) accepted at Frontiers in [Robotics and AI](https://www.frontiersin.org/journals/robotics-and-ai)'
-- 'Oct 2021: [Paper](https://openreview.net/forum?id=0WDtVJVwBcf) accepted at [CoRL 2021](https://2021.corl.org/)'
-- 'Jun 2021: [Paper](https://onlinelibrary.wiley.com/doi/10.1002/jocb.514) accepted in the [Journal of Creative Behavior](https://onlinelibrary.wiley.com/journal/21626057)'
-- ['Apr 2021: Pictorial accepted at [DIS](https://dis.acm.org/2021/)', 'https://www.youtube.com/watch?v=JpDV9FF3Sf0']
-- ['Apr 2021: [Paper](https://dl.acm.org/doi/fullHtml/10.1145/3450741.3465267) accepted at [C&C](https://dis.acm.org/2021/)','https://www.youtube.com/watch?v=6T-QjgF1AEo']
-- ['Mar 2021: Best [Paper](https://dl.acm.org/doi/abs/10.1145/3434073.3444650) Award at [HRI 2021](https://humanrobotinteraction.org/2021/awards/)','https://www.youtube.com/watch?v=E2trLGclTc8']
-- 'Aug 2020: Started as a Postdoc at CS UW'
-- 'May 2020: Defended my PhD!'
+Jul 2025:
+- Pictorial accepted at [DIS](https://dis.acm.org/2025/)
+Jun 2025:
+- Invited Speaker at [Open Style Lab](https://www.openstylelab.org/) Summer Program
+- Workshop at Detroit Empower
+- Creation of [Robo Reflections](https://studiorobot.github.io/robo-reflections/), a new HRI reading group at UMich
+May 2025: 
+- Award in the for Arts & Robotics at [ICRA 2025](https://www.icra2025.org/)
+- Demo and LBR accepted at [ICRA 2025](https://www.icra2025.org/)
+- LBR accepted at [CHI 2025](https://chi2025.acm.org/)
+Apr 2025: 
+- Organized the [HRI Design Retreat](https://hridesignretreat.com/)
+- 'Panelist at "[Beyond Human: AI, Opera, and the Art of Machine Expression](https://events.umich.edu/event/134064)"'
+- Poster accepted on [WeRobot](https://www.uwindsor.ca/law/3450/werobot-2025)
+Mar 2025: 
+- Received the [Research Scouts](https://medresearch.umich.edu/office-research/about-office-research/research-scouts) Award
+- Keynote speaker at the AAAI Spring Symposium on [Child-AI Interaction in the Era of Foundation Models](https://sites.google.com/iu.edu/childai-aaai2025/)
+Feb 2025:
+- '[Talk](https://www.youtube.com/live/Z4Q-wsOOVL4?si=h1RPqLpPXWb393qe&t=1017) on “Inspiring Robots” at Chicago Creative Machines'
+- Late-Breaking Work accepted at [CHI](https://chi2025.acm.org/)
+- Paper accepted in [ICRA Arts & Robotics](https://roboticart.org/icra2025/)
+- Poster accepted at [WeRobot 2025](https://www.werobot2025.ca/)
+Jan 2025: 
+- Published chapter on "Metaphors" in the book "[Designing Interactions with Robots Methods and Perspectives](https://www.routledge.com/Designing-Interactions-with-Robots-Methods-and-Perspectives/Lupetti-Zaga-Cila-Sabanovic-Jung/p/book/9781032430270)"
+- Launched the new class ROB340 at UMich
+Nov 2024: 
+- Keynote and panel at [FARI Conference](https://www.conference.fari.brussels/)
+Aug 2024: 
+- Received the NSF EAGER Award
+Jul 2024: 
+- Received the [DARPA YFA](https://robotics.umich.edu/news/2025/authenticity-in-artwork-with-robotics-receives-darpa-young-faculty-award/)
+Jun 2024: 
+- Invited Talk at [Honda Research Institute Europe](https://www.honda-ri.de/)
+- Keynote at [BMW Summer School](https://www.summerschool.bmw/content/dam/grpw/websites/summerschool_bmw/2024_Draft_Schedule_BMW_Summer_School_pre-final.pdf)
+May 2024: 
+- Keynote & Panelist at [Haru Fest](https://mypersonalrobots.org/events/haru-fest-2024)
+Mar 2024: 
+- '[Workshop](https://dl.acm.org/doi/abs/10.1145/3610978.3638167) accepted at [HRI](https://humanrobotinteraction.org/2024/index.html)'
+- Keynote at the Disability Visibility Symposium
+Jan 2024: 
+- Launched the new class [Design for HRI](https://patricialvesoliveira.com/Design-For-HRI-Winter-2024/) at UMich
+- Launched [Robot Studio](https://www.robotdesign.studio/)!
+- Started as an Assistant Professor of [Robotics](https://robotics.umich.edu/) at UMich
+Nov 2023: 
+- Started as a Senior UX Designer for [Astro](https://www.amazon.com/dp/B078NSDFSB) at Amazon Lab126
+Mar 2023: 
+- '[Best Paper Award](https://dl.acm.org/doi/abs/10.1145/3568162.3576988) at [HRI](https://humanrobotinteraction.org/2023/index.html)'
+Mar 2023: 
+- '[Video](https://dl.acm.org/doi/abs/10.1145/3568294.3580209) accepted at [HRI](https://humanrobotinteraction.org/2023/index.html)'
+Oct 2022: 
+- '[Paper](https://dl.acm.org/doi/abs/10.1145/3526113.3545707) accepted at [UIST](https://uist.acm.org/uist2022/)'
+Mar 2022: 
+- Organized [workshop](https://theoriahri.wixsite.com/theoria) at [HRI](https://humanrobotinteraction.org/2022/)
+- Paper accepted at [HRI](https://humanrobotinteraction.org/2022/)
+Nov 2021: 
+- Paper accepted at [PLATEAU](https://2021.plateau-workshop.org/)
+Oct 2021: 
+- '[Paper](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.983408/full) accepted at Frontiers in [Robotics and AI](https://www.frontiersin.org/journals/robotics-and-ai)'
+- '[Paper](https://openreview.net/forum?id=0WDtVJVwBcf) accepted at [CoRL 2021](https://2021.corl.org/)'
+Jun 2021: 
+- '[Paper](https://onlinelibrary.wiley.com/doi/10.1002/jocb.514) accepted in the [Journal of Creative Behavior](https://onlinelibrary.wiley.com/journal/21626057)'
+Apr 2021: 
+- Pictorial accepted at [DIS](https://dis.acm.org/2021/) - [video](https://www.youtube.com/watch?v=JpDV9FF3Sf0)
+- '[Paper](https://dl.acm.org/doi/fullHtml/10.1145/3450741.3465267) accepted at [C&C](https://dis.acm.org/2021/) - [video](https://www.youtube.com/watch?v=6T-QjgF1AEo)'
+Mar 2021: 
+- Best [Paper](https://dl.acm.org/doi/abs/10.1145/3434073.3444650) Award at [HRI 2021](https://humanrobotinteraction.org/2021/awards/) - [video](https://www.youtube.com/watch?v=E2trLGclTc8)
+Aug 2020: 
+- Started as a Postdoc at CS UW
+May 2020: 
+- Defended my PhD!
 
 
 

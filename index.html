@@ -108,76 +108,248 @@ layout: default
 			{% endif %}
 		</div>
 	
-		<div class="column right-column need-padding" id="news">
-			<div class="topic small-margin">News</div>
-			{% assign news_items = site.data.news | slice: 0, 9 %}
-			{% for item in news_items %}
-			<div>
-				{% if item.first %}
-				{{ item[0] | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				{% if item[1] %}
-				- <a href="{{ item[1] }}" target="_blank" style="position: relative; top: 1px;">
-					<i class="fa-brands fa-youtube"></i>
-				</a>
-				{% endif %}
-				{% else %}
-				{{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				{% endif %}
-			</div>
-			{% endfor %}
-			<div id="extra-news" style="display: none;">
-				{% assign extra_news_items = site.data.news | slice: 9, site.data.news.size %}
-				{% for item in extra_news_items %}
-				<div>
-					{% if item.first %}
-					{{ item[0] | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-					{% if item[1] %}
-					- <a href="{{ item[1] }}" target="_blank" style="position: relative; top: 1px;">
-						<i class="fa-brands fa-youtube"></i>
-					</a>
-					{% endif %}
-					{% else %}
-					{{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-					{% endif %}
-				</div>
-				{% endfor %}
-			</div>
-			{% if site.data.news.size > 9 %}
-			<button id="more-news" class="show-more">Show More</button>
-			{% endif %}
-		</div>
-	</div>
-	
-	
+<div class="column right-column need-padding" id="news">
+  <div class="topic small-margin">News</div>
 
-	<div class="row">
-		<div class="column left-column need-padding">
-			<div class="topic small-margin">Service</div>
-			<div>
-				{% for service in site.data.service.left %}
-				<div style="margin-bottom:3px;">
-					<span class='service-conf'>{{ service.conf }}</span>
-					<span class='service-type {{ service.role }}'>{{ service.type }}</span>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-	
-		<div class="column right-column need-padding">
-			<!-- Add a placeholder title for the right column to maintain alignment -->
-			<div class="topic small-margin" style="visibility: hidden;">Service</div>
-			<div>
-				{% for service in site.data.service.right %}
-				<div style="margin-bottom:3px;">
-					<span class='service-conf'>{{ service.conf }}</span>
-					<span class='service-type {{ service.role }}'>{{ service.type }}</span>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
+  {% assign news_index = 0 %}
+
+  {% for month in site.data.news %}
+    {% assign month_label = month[0] %}
+    {% assign items = month[1] %}
+
+    {% for item in items %}
+      {% if news_index < 9 %}
+        <div>
+          {% if item.first %}
+            {{ month_label }}: {{ item[0] | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+            {% if item[1] %}
+              - <a href="{{ item[1] }}" target="_blank" style="position: relative; top: 1px;">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            {% endif %}
+          {% else %}
+            {{ month_label }}: {{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+          {% endif %}
+        </div>
+      {% endif %}
+      {% assign news_index = news_index | plus: 1 %}
+    {% endfor %}
+  {% endfor %}
+
+  <div id="extra-news" style="display: none;">
+    {% assign news_index = 0 %}
+    {% for month in site.data.news %}
+      {% assign month_label = month[0] %}
+      {% assign items = month[1] %}
+
+      {% for item in items %}
+        {% if news_index >= 9 %}
+          <div>
+            {% if item.first %}
+              {{ month_label }}: {{ item[0] | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+              {% if item[1] %}
+                - <a href="{{ item[1] }}" target="_blank" style="position: relative; top: 1px;">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              {% endif %}
+            {% else %}
+              {{ month_label }}: {{ item | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+            {% endif %}
+          </div>
+        {% endif %}
+        {% assign news_index = news_index | plus: 1 %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+
+  {% assign total_news = 0 %}
+  {% for month in site.data.news %}
+    {% assign items = month[1] %}
+    {% assign total_news = total_news | plus: items.size %}
+  {% endfor %}
+
+  {% if total_news > 9 %}
+    <button id="more-news" class="show-more">Show More</button>
+  {% endif %}
+</div>
+
 	</div>
-	
-	
+
+{% assign all_service = "" | split: "" %}
+
+{% for year in site.data.service %}
+  {% assign year_label = year[0] %}
+  {% assign items = year[1] %}
+  {% for item in items %}
+    {% capture conf_entry %}
+      {{ year_label }}: {{ item.conf | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}|||{{ item.role }}|||{{ item.color }}
+    {% endcapture %}
+    {% assign all_service = all_service | push: conf_entry %}
+  {% endfor %}
+{% endfor %}
+
+{% assign all_service = all_service | reverse %}
+{% assign total = all_service.size %}
+
+{% assign half = total | divided_by: 2 %}
+{% assign left_column_full = all_service | slice: 0, half %}
+{% assign right_column_full = all_service | slice: half, total %}
+
+{%- comment -%}
+Calculate how many items to show initially on each side,
+so total shown is 9 or less.
+{%- endcomment -%}
+
+{% assign max_show = 9 %}
+{% assign left_show = half %}
+{% assign right_show = total | minus: half %}
+
+{% if left_show > max_show %}
+  {% assign left_show = max_show %}
+  {% assign right_show = 0 %}
+{% else %}
+  {% assign right_show = max_show | minus: left_show %}
+  {% if right_show > right_column_full.size %}
+    {% assign right_show = right_column_full.size %}
+  {% endif %}
+{% endif %}
+
+{% assign all_service = "" | split: "" %}
+
+{% for year in site.data.service %}
+  {% assign year_label = year[0] %}
+  {% assign items = year[1] %}
+  {% for item in items %}
+    {% capture conf_entry %}
+      {{ year_label }}: {{ item.conf | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}|||{{ item.role }}|||{{ item.color }}
+    {% endcapture %}
+    {% assign all_service = all_service | push: conf_entry %}
+  {% endfor %}
+{% endfor %}
+
+{% assign all_service = all_service | reverse %}
+{% assign total = all_service.size %}
+
+{% assign half = total | divided_by: 2 %}
+{% assign left_column_full = all_service | slice: 0, half %}
+{% assign right_column_full = all_service | slice: half, total %}
+
+{% assign max_show_per_column = 9 %}
+
+{% assign left_show = left_column_full.size %}
+{% if left_show > max_show_per_column %}
+  {% assign left_show = max_show_per_column %}
+{% endif %}
+
+{% assign right_show = right_column_full.size %}
+{% if right_show > max_show_per_column %}
+  {% assign right_show = max_show_per_column %}
+{% endif %}
+
+<div class="row">
+  <div class="column left-column need-padding">
+    <div class="topic small-margin">Service</div>
+
+    <div id="left-service-visible">
+      {% for entry in left_column_full %}
+        {% if forloop.index0 < left_show %}
+          {% assign parts = entry | split: '|||' %}
+          <div style="margin-bottom:3px;">
+            <span class='service-conf'>{{ parts[0] }}</span>
+            <span class='service-type {{ parts[2] }}'>{{ parts[1] }}</span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div id="left-service-extra" style="display:none;">
+      {% for entry in left_column_full %}
+        {% if forloop.index0 >= left_show %}
+          {% assign parts = entry | split: '|||' %}
+          <div style="margin-bottom:3px;">
+            <span class='service-conf'>{{ parts[0] }}</span>
+            <span class='service-type {{ parts[2] }}'>{{ parts[1] }}</span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% assign show_button = false %}
+    {% if left_column_full.size > max_show_per_column or right_column_full.size > max_show_per_column %}
+      {% assign show_button = true %}
+    {% endif %}
+
+    {% if show_button %}
+      <button id="more-service" class="show-more" onclick="toggleService()">Show More</button>
+    {% endif %}
+  </div>
+
+  <div class="column right-column need-padding">
+    <div class="topic small-margin" style="visibility: hidden;">&nbsp;</div>
+
+    <div id="right-service-visible">
+      {% for entry in right_column_full %}
+        {% if forloop.index0 < right_show %}
+          {% assign parts = entry | split: '|||' %}
+          <div style="margin-bottom:3px;">
+            <span class='service-conf'>{{ parts[0] }}</span>
+            <span class='service-type {{ parts[2] }}'>{{ parts[1] }}</span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div id="right-service-extra" style="display:none;">
+      {% for entry in right_column_full %}
+        {% if forloop.index0 >= right_show %}
+          {% assign parts = entry | split: '|||' %}
+          <div style="margin-bottom:3px;">
+            <span class='service-conf'>{{ parts[0] }}</span>
+            <span class='service-type {{ parts[2] }}'>{{ parts[1] }}</span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleService() {
+  const leftExtra = document.getElementById('left-service-extra');
+  const rightExtra = document.getElementById('right-service-extra');
+  const button = document.getElementById('more-service');
+
+  if (leftExtra.style.display === 'none') {
+    leftExtra.style.display = 'block';
+    rightExtra.style.display = 'block';
+    button.textContent = 'Show Less';
+  } else {
+    leftExtra.style.display = 'none';
+    rightExtra.style.display = 'none';
+    button.textContent = 'Show More';
+  }
+}
+</script>
+
+
+
+<script>
+function toggleService() {
+  const leftExtra = document.getElementById('left-service-extra');
+  const rightExtra = document.getElementById('right-service-extra');
+  const button = document.getElementById('more-service');
+
+  if (leftExtra.style.display === 'none') {
+    leftExtra.style.display = 'block';
+    rightExtra.style.display = 'block';
+    button.textContent = 'Show Less';
+  } else {
+    leftExtra.style.display = 'none';
+    rightExtra.style.display = 'none';
+    button.textContent = 'Show More';
+  }
+}
+</script>
 	
 <div class="clearfix press-and-news">
 	<div class="left-box press need-padding">
