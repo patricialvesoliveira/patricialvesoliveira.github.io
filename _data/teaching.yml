@@ -5,7 +5,7 @@
   description: |
     This core undergraduate course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include qualitative/quantitative approaches along with objective/subjective metrics to evaluate robots, design of experiments, selection of sample, etc. By the end of this class, students will be knowledgable on the types of metrics, studies, and analyses they can conduct to understand the performance of a robot system informed by human feedback.
   terms:
-    - Winter 2025
+    - "[Winter 2025](https://studiorobot.github.io/rob340/)"
 
 - id: "design-for-HRI"
   code: ROB 498/599
