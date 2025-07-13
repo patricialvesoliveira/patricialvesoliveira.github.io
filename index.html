@@ -23,7 +23,11 @@ layout: default
 			<span class="focus">Lab</span>: <a href="https://robotdesign.studio" target="_blank">Robot Studio</a>
 		</div>
 		<div style="margin-bottom:2px;">
-			<span class="focus">Affiliations</span>: <a href="https://robotdesign.studio" target="_blank">{{ site.data.index.affiliations | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+			<span class="focus">Affiliations</span>: 
+      {% for affiliation in site.data.index.affiliations %}
+      {{ affiliation | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
+      {% unless forloop.last %}&bull; {% endunless %}
+      {% endfor %}
 			</a>
 		</div>
 		<div>

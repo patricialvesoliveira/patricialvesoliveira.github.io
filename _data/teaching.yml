@@ -2,8 +2,13 @@
   code: ROB 340
   title: Human Evaluation of Robot Systems
   image: "/teaching/rob340.jpg"
-  description: |
-    This core undergraduate course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include qualitative/quantitative approaches along with objective/subjective metrics to evaluate robots, design of experiments, selection of sample, etc. By the end of this class, students will be knowledgable on the types of metrics, studies, and analyses they can conduct to understand the performance of a robot system informed by human feedback.
+  description: >
+    This core undergraduate course covers the fundamentals of how robots can be evaluated 
+    by human users to better understand the success of robotic systems. 
+    Topics include qualitative/quantitative approaches along with objective/subjective metrics to evaluate robots, 
+    design of experiments, selection of sample, etc. 
+    By the end of this class, students will be knowledgable on the types of metrics, studies, 
+    and analyses they can conduct to understand the performance of a robot system informed by human feedback.
   terms:
     - "[Winter 2025](https://studiorobot.github.io/rob340/)"
 
@@ -11,7 +16,13 @@
   code: ROB 498/599
   title: Design For Human-Robot Interaction
   image: "/teaching/design-for-human-robot-interaction.png"
-  description: |
-    This advanced course covers fundamentals of Design for Human-Robot Interaction. Topics include frameworks for robot design; ideation strategies for robotics such as body-storming and speculation; participatory design with end-users and communities; creation of mock-ups and prototypes to test ideas; development of qualitative and quantitative key-performance indicators to measure the success of the robot; design ethics, etc. This course will prepare students to be full-stack interaction robot designers.
+  description: >
+    This advanced course covers fundamentals of Design for Human-Robot Interaction. 
+    Topics include frameworks for robot design; 
+    ideation strategies for robotics such as body-storming and speculation; 
+    participatory design with end-users and communities; 
+    creation of mock-ups and prototypes to test ideas; 
+    development of qualitative and quantitative key-performance indicators to measure the success of the robot; 
+    design ethics, etc. This course will prepare students to be full-stack interaction robot designers.
   terms:
     - "[Winter 2024](Design-For-HRI-Winter-2024)"
