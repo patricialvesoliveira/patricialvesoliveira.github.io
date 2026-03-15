@@ -2,22 +2,26 @@
 layout: default
 ---
 <div class="footer-col-wrapper clearfix">
-	<div class="footer-col body-col-2" style="margin:0px;" id="picture">
-		<img src="assets/images/{{site.title_image}}" id="self_img" class="left padded"   style="margin:0px; margin-right:15px;"
-			alt="Patrícia Alves-Oliveira Headshot">
-	</div>
-	<div class="footer-col body-col-3"  style="margin:0px; font-size:14px;">
+  <div class="footer-col body-col-2" style="margin:0px;" id="picture">
+    <img src="assets/images/{{site.title_image}}" id="self_img" class="left padded"
+      style="margin:0px; margin-right:15px;" alt="Patrícia Alves-Oliveira Headshot">
+  </div>
+  <div class="footer-col body-col-3" style="margin:0px; font-size:14px;">
+    <div>
+      <span class="focus">
+        Assistant Professor
+      </span> of <a href="https://robotics.umich.edu/" target="_blank">Robotics</a> at the
+      <a href="https://umich.edu/" target="_blank">University of Michigan</a>
+    </div>  
+    <div>
+      <span>
+        <a href="https://www.meta.com/" target="_blank">
+          Meta
+        </a> Advisory Board
+      </span>
+    </div>
 		<div>
-			<span class="focus">
-				Assistant Professor
-			</span> of <a href="https://robotics.umich.edu/" target="_blank">Robotics</a> at the
-			<a href="https://umich.edu/" target="_blank">University of Michigan</a>
-		</div>
-		<div>
-			<span class="focus">Area</span>: Human-Robot Interaction &bull; Artificial Intelligence &bull; Design Research
-		</div>
-		<div>
-			<span class="focus">Focuses</span>: Health &bull; Education &bull; Arts
+			<span class="focus">Area</span>: Social Robotics &bull; Artificial Intelligence &bull; Design
 		</div>
 		<div style="margin-bottom:2px;">
 			<span class="focus">Lab</span>: <a href="https://robotdesign.studio" target="_blank">Robot Studio</a>
@@ -50,7 +54,7 @@ layout: default
 	
 	<div class="row">
 		<div class="column left-column need-padding" id="students">
-			<div class="topic small-margin">Students</div>
+			<div class="topic small-margin">PHD Students</div>
 			{% for student in site.data.students.current %}
 			<div>
 				<span class='service-conf'>{{ student.name }}</span>
@@ -76,7 +80,7 @@ layout: default
 			{% endfor %}
 			{% endif %}
 		</div>
-		
+		 
 		<div class="column right-column need-padding" id="teaching">
 			<div class="topic small-margin">Teaching</div>
 			{% for course in site.data.teaching %}
@@ -175,7 +179,7 @@ layout: default
   {% if total_news > 9 %}
     <button id="more-news" class="show-more">Show More</button>
   {% endif %}
-</div>
+</div> 
 
 	</div>
 
